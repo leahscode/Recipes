@@ -1,0 +1,142 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-size: 100%;
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+	background-color: #FFF5EF;
+}
+#body {
+	min-height: 100%;
+	background-image: linear-gradient(to right, #FFE5D6, #F8D0D7);
+}
+
+header {
+	text-align: center;
+	width: 100%;
+	background-color: pink;
+	margin: 0;
+	padding: .5em 0;
+	font-family: sans-serif;
+	color: #8A3675;
+
+	}
+header h2 {
+	font-size: 250%;
+	margin: .5em auto;	
+}
+hr {
+	width: 30%;
+}
+/* Cloud */
+/* https://css-tricks.com/examples/hrs/ */
+hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px #8A3675;
+}
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+header h2 a {
+	color: #8A3675;
+	text-decoration: none;
+}
+header h2 a:focus, header h2 a:hover {font-style: normal;}
+header h2 i {
+	color: red;
+	font-family: cursive;
+}
+header h3 {
+	font-size: 175%;
+	padding: .5em 0 0;
+}
+/* */
+nav {
+	position: relative;
+}
+a:hover, a:focus {font-style: italic;}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	}
+nav ul li {
+	float: left;
+	width: 20%;
+}
+	
+nav ul li a {
+	display: block;
+	background-color: #8A3675;
+	color: pink;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+nav ul ul {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+nav ul ul li {
+	float: none;
+	/*width: 20%;*/
+	position: relative;
+	}
+nav ul li:hover>ul {display: block;}
+nav>ul::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+/* nav ul ul li ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}  
+nav ul ul li:hover>ul {display: block;}
+nav ul ul ul li {width: 100%} */
+
+.slicknav_menu {
+	display:none;
+}
+
+main, footer {
+	padding: 1em 2em;
+}
+
+@media screen and (max-width: 800px) {
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu, .slicknav_icon-bar {
+		display:block;
+		background: #8A3675 !important;
+		color: pink;
+	}
+	.slicknav_nav, .slicknav_nav a {
+		color: pink;
+	}
+	.slicknav_btn, .slicknav_menutxt{
+		color: #8A3675 !important;
+		background: pink;
+		text-shadow: none !important;
+	}
+	hr {
+		width: 80%;
+	}
+}
+@media screen and (min-width: 801px) {
+	#body {
+		border: 2px solid #8A3675;
+		box-shadow: 0 0 30px 25px rgba(0, 0, 0, 0.5);
+	}
+	
+}

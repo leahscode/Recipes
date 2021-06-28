@@ -1,0 +1,37 @@
+.section {
+    max-width: fit-content;
+    min-width: 42%;
+    float: left;
+    margin: 2%;
+    padding: 2%;
+}
+footer {
+    clear: both;
+}
+
+@media screen and (max-width: 500px) {
+    label, input {
+        max-width: 10em;
+    }
+}
+@media screen and (max-width: 438px) {
+    label, input {
+        max-width: 9em;
+    }
+    .section {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 389px) {
+    label, input {
+        max-width: 8em;
+    }
+}
+@media screen and (max-width: 360px) {
+    label, input {
+        max-width: 11em;
+    }
+    label {
+        text-align: justify;
+    }  
+}

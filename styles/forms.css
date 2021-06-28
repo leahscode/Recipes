@@ -1,0 +1,35 @@
+label {
+    font-weight: bold;
+    width: 11em;
+    float: left;
+    text-align: right;
+    color: #8A3675;
+    margin-right: 1em;
+}
+.error {
+    color: red;
+}
+input {
+    margin-bottom: .5em;
+}
+input, textarea, select{
+    background-color: #FFF5EF;
+}
+#more, button, .button {
+    background-color: pink;
+    color: #8A3675;
+    border: 3px solid #8A3675;
+    border-radius: 15px;
+    padding: .3em;
+    margin: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.button:hover {
+    font-style: normal;
+}
+.line_number, legend, th {
+    color: #8A3675;
+    font-weight: bold;
+    padding: .5em 1em;
+}

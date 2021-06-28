@@ -1,0 +1,24 @@
+main {
+    max-width: fit-content;
+    margin: auto;
+}
+label {
+    width: fit-content;
+}
+
+@media screen and (max-width: 800px) {
+    #ingredients input, textarea {
+        /* The size of the containing td, which is smaller than the default input width */
+        width: 100%;
+    }
+    #ingredients {
+        margin-right: .5em;
+    }
+    .line_number {
+        padding: .5em;
+    }
+    #more {
+        width: fit-content;
+        display: inline-block;
+    }
+}
